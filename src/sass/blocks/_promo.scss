@@ -1,0 +1,224 @@
+.promo {
+    // max-width: 1255px;
+    margin: 62px auto 0px auto;
+    position: relative;
+
+    @include mobile {
+        margin-top: 48px;
+    }
+
+    &__img-man {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+
+        @include mobile {
+            display: none;
+        }
+    }
+
+    &__body {
+        position: relative;
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 28px 138px 48px 138px;
+        background: $dark;
+        border-radius: 24px;
+        overflow: hidden;
+
+        @include laptop-small {
+            max-width: 870px;
+        }
+
+        @include tablet {
+            max-width: 702px;
+        }
+
+        @include mobile {
+            max-width: 310px;
+            padding: 46px 13px 43px 13px;
+        }
+    }
+
+    &__img-orange {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+
+        @include tablet {
+            z-index: 0;
+        }
+
+        @include mobile {
+            top: -35px;
+            left: -88px;
+        }
+    }
+
+    &__img-green {
+        position: absolute;
+        top: 24px;
+        right: 24px;
+
+        @include mobile {
+            top: -36px;
+            right: -36px;
+        }
+
+        top: -36px;
+        right: -36px;
+    }
+
+    &__img-purple {
+        position: absolute;
+        left: 24px;
+        bottom: 24px;
+
+        @include mobile {
+            left: -53px;
+            bottom: -52px;
+        }
+    }
+
+    &__img-red {
+        position: absolute;
+        right: 0px;
+        bottom: 0px;
+
+        @include mobile {
+            right: -63px;
+            bottom: -69px;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        @include tablet {
+            width: 484px;
+            position: relative;
+        }
+
+        @include mobile {
+            width: 284px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 25px;
+        text-align: center;
+
+        @include mobile {
+            margin-top: 16px;
+        }
+    }
+
+    &__form {
+        margin: 35px auto 0px auto;
+        max-width: 594px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include tablet {
+            flex-direction: column;
+            margin-top: 16px;
+            max-width: 320px;
+            gap: 16px;
+        }
+        @include mobile {
+            margin-top: 24px;
+            max-width: 266px;
+            gap: 12px;
+        }
+
+        input {
+            width: 320px;
+            height: 56px;
+            background: #ffffff;
+            border: 1px solid #d5dae1;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+            border-radius: 8px;
+            padding: 16px 14px;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #667085;
+
+            @include mobile {
+                width: 266px;
+            }
+        }
+
+        button {
+            width: 258px;
+            height: 56px;
+            padding: 16px 28px;
+            background: #22c55e;
+            box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+            border-radius: 6px;
+            border: none;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            color: #f0fdf4;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+
+            @include tablet {
+                width: 320px;
+                padding: 16px 59px;
+            }
+
+            @include mobile {
+                width: 266px;
+                padding: 14px 32px;
+            }
+        }
+    }
+
+    &__error {
+        margin-top: 8px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #ef5944;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__descr {
+        margin: 32px auto 0 auto;
+        max-width: 715px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #8896ab;
+
+        a {
+            font-weight: 700;
+            text-align: center;
+            text-decoration-line: underline;
+            color: #22c55e;
+        }
+
+        @include laptop-small {
+            max-width: 480px;
+        }
+
+        @include tablet {
+            max-width: 321px;
+        }
+
+        @include tablet {
+            margin-top: 26px;
+            max-width: 277px;
+        }
+    }
+}

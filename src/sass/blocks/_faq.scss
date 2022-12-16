@@ -1,0 +1,161 @@
+.faq {
+    margin-top: 100px;
+
+    @include laptop-small {
+        margin-top: 32px;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        gap: 144px;
+
+        @include laptop-small {
+            flex-direction: column;
+            gap: 35px;
+        }
+    }
+
+    &__card {
+        margin-top: 103px;
+        max-width: 456px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include laptop-small {
+            margin-top: 0px;
+            max-width: 610px;
+        }
+
+        @include mobile {
+            max-width: 310px;
+        }
+    }
+
+    &__label {
+        padding: 2px 8px;
+        width: 42px;
+        height: 22px;
+        background: #dcfce7;
+        box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+        border-radius: 36px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: #22c55e;
+    }
+
+    &__title {
+        margin-top: 16px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color: #2a3342;
+
+        @include laptop-small {
+            font-size: 24px;
+        }
+
+        @include mobile {
+            margin-top: 12px;
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: -0.02em;
+        }
+    }
+
+    &__descr {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #556987;
+
+        @include laptop-small {
+            font-size: 16px;
+        }
+
+        @include mobile {
+            margin-top: 12px;
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+
+    &__questions {
+        max-width: 536px;
+        width: 100%;
+
+        @include laptop-small {
+            max-width: 700px;
+        }
+
+        @include mobile {
+            max-width: 310px;
+        }
+    }
+
+    .accordion {
+        margin-top: 40px;
+        max-width: 536px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: white;
+        border: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 30px;
+        color: #2a3342;
+        cursor: pointer;
+
+        @include laptop-small {
+            max-width: 700px;
+            font-size: 20px;
+
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        @include mobile {
+            max-width: 310px;
+            margin-top: 38px;
+            font-size: 16px;
+        }
+
+        &__img {
+            transition: all 0.5s;
+        }
+
+        &.active {
+            .accordion__img {
+                transform: rotate(180deg);
+                transition: all 0.5s;
+            }
+        }
+    }
+
+    .panel {
+        display: none;
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        color: #556987;
+
+        @include laptop-small {
+            max-width: 456px;
+        }
+
+        @include mobile {
+            max-width: 310px;
+            font-size: 14px;
+        }
+    }
+}

@@ -1,0 +1,200 @@
+.feedback {
+    margin-top: 141px;
+    min-height: 884px;
+    background: url(../img/feedback/wave.jpg) center (center / cover) no-repeat;
+    padding: 90px 0 152px 0;
+
+    @include laptop-small {
+        margin-top: 115px;
+    }
+
+    @include tablet {
+        background: url(../img/feedback/Wave_laptopsmall.jpg) center (center / cover) no-repeat;
+    }
+
+    @include mobile-small {
+        background: url(../img/feedback/Wave_mobile.jpg) center (center / cover) no-repeat;
+    }
+
+    &__label {
+        padding: 2px 8px;
+        width: 74px;
+        height: 22px;
+        background: #dcfce7;
+        box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+        border-radius: 36px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: $green;
+
+        @include mobile-small {
+            width: 55px;
+            font-size: 8px;
+        }
+    }
+
+    &__title {
+        margin-top: 16px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color: #ffffff;
+
+        @include laptop-small {
+            font-size: 24px;
+        }
+
+        @include mobile-small {
+            margin-top: 14px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+
+    &__subtitle {
+        margin-top: 16px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: $light-grey;
+
+        @include laptop-small {
+            font-size: 16px;
+        }
+
+        @include mobile-small {
+            margin-top: 12px;
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+
+    &__carousel {
+        margin-top: 40px;
+        display: flex;
+        justify-content: space-between;
+        gap: 65px;
+
+        @include mobile-small {
+            margin-top: 38px;
+        }
+
+        .slick-slide {
+            display: flex;
+        }
+
+        .slick-dots {
+            list-style-type: none;
+            padding: 0px;
+            position: absolute;
+            top: 450px;
+            right: 50%;
+            transform: translateX(50%);
+            display: flex !important;
+            justify-content: space-between;
+            gap: 16px;
+
+            .slick-active {
+                button {
+                    background: $green;
+                }
+            }
+
+            button {
+                font-size: 0;
+                width: 20px;
+                height: 20px;
+                border: none;
+                border-radius: 100%;
+                background: #ffffff;
+            }
+        }
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        padding: 32px;
+        align-items: flex-start;
+        max-width: 359px;
+        width: 100%;
+        min-height: 404px;
+        background: #ffffff;
+        box-shadow: 0px 1px 2px rgba(85, 105, 135, 0.1);
+        border-radius: 6px;
+        margin-right: 65px;
+
+        @include mobile-small {
+            max-width: 266px;
+            min-height: 365px;
+        }
+
+        &-descr {
+            font-weight: 500;
+            font-size: 24px;
+            line-height: 32px;
+            color: #2a3342;
+
+            @include mobile {
+                font-size: 16px;
+                line-height: 32px;
+            }
+        }
+
+        &-about {
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+            color: #333f51;
+            position: absolute;
+            bottom: 64px;
+
+            @include mobile {
+                font-size: 14px;
+                line-height: 28px;
+            }
+
+            .span-stories {
+                background: linear-gradient(
+                    94.47deg,
+                    #edce76 65.39%,
+                    #fa7e1e 71.03%,
+                    #d62976 82.85%,
+                    #962fbf 91.57%,
+                    #4f5bd5 100.3%
+                );
+                text-transform: uppercase;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+            }
+
+            .span-green {
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 28px;
+                text-decoration-line: underline;
+                color: #22c55e;
+
+                @include mobile {
+                    font-size: 14px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        &-user {
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 28px;
+            color: #8896ab;
+            margin-bottom: 32px;
+            position: absolute;
+            bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+.subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: $light-grey;
+
+    @include laptop-small {
+        line-height: 25px;
+    }
+
+    @include tablet {
+        font-size: 18px;
+    }
+
+    @include mobile {
+        font-size: 15px;
+    }
+}

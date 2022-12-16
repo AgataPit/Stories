@@ -1,0 +1,109 @@
+footer {
+    margin-top: 120px;
+    background: #2a3342;
+    padding-top: 88px;
+    padding-bottom: 54px;
+
+    @include tablet {
+        padding-top: 68px;
+        padding-bottom: 41px;
+    }
+
+    @include mobile {
+        margin-top: 94px;
+        padding-bottom: 47px;
+    }
+
+    .footer {
+        &__label {
+            display: block;
+            margin: 0 auto;
+        }
+
+        &__menu {
+            margin: 24px auto 0 auto;
+            max-width: 692px;
+
+            @include tablet {
+                max-width: 163px;
+                margin-top: 60px;
+            }
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+
+            @include tablet {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+        }
+
+        &__link {
+            border-radius: 6px;
+            cursor: pointer;
+            &:hover {
+                background: #333f51;
+
+                a {
+                    color: #ffffff;
+                }
+            }
+            a {
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                color: #8896ab;
+                text-decoration: none;
+            }
+
+            &_spy {
+                &:hover {
+                    background: #333f51;
+
+                    a {
+                        color: $green;
+                    }
+                }
+                a {
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-decoration-line: underline;
+
+                    color: $green;
+                }
+            }
+        }
+
+        &__copyright {
+            margin: 45px auto 0 auto;
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 30px;
+            color: #8896ab;
+            text-align: center;
+        }
+
+        &__notice {
+            margin: 39px auto 0 auto;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 30px;
+            color: #8896ab;
+            text-align: center;
+
+            @include tablet {
+                max-width: 391px;
+            }
+
+            @include mobile {
+                max-width: 289px;
+                line-height: 18px;
+            }
+        }
+    }
+}

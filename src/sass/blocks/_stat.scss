@@ -1,0 +1,71 @@
+.stat {
+    margin: 108px auto 0px auto;
+
+    @include laptop-small {
+        margin-top: 101px;
+    }
+
+    @include tablet {
+        margin-top: 90px;
+    }
+
+    @include mobile {
+        margin-top: 60px;
+    }
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1171px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        gap: 57px;
+
+        @include laptop-small {
+            max-width: 550px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include mobile {
+            gap: 22px;
+        }
+    }
+
+    &__group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        @include laptop-small {
+            width: 244px;
+        }
+    }
+
+    &__value {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 28px;
+        text-align: center;
+        color: #000000;
+
+        @include laptop-small {
+            font-size: 40px;
+        }
+    }
+
+    &__descr {
+        margin-top: 34px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 28px;
+        text-align: center;
+        color: #556987;
+
+        @include laptop-small {
+            font-size: 16px;
+            margin-top: 24px;
+        }
+    }
+}

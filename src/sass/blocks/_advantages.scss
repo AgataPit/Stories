@@ -1,0 +1,223 @@
+.advantages {
+    margin-top: 100px;
+
+    @include mobile {
+        margin-top: 94px;
+    }
+
+    &__label {
+        width: 128px;
+        height: 22px;
+        background: #dcfce7;
+        box-shadow: 0px 1px 2px rgba(105, 81, 255, 0.05);
+        border-radius: 36px;
+        padding: 2px 8px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+        text-transform: uppercase;
+        color: $green;
+
+        @include mobile {
+            width: 91px;
+            font-size: 8px;
+        }
+    }
+
+    &__title {
+        margin-top: 18px;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        letter-spacing: -0.02em;
+        color: #2a3342;
+
+        @include tablet {
+            font-size: 24px;
+        }
+
+        @include mobile {
+            margin-top: 12px;
+            font-size: 18px;
+            line-height: 22px;
+            max-width: 310px;
+        }
+    }
+
+    &__descr {
+        margin-top: 16px;
+        max-width: 870px;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        color: #556987;
+
+        @include mobile {
+            margin-top: 12px;
+            font-size: 15px;
+            line-height: 21px;
+        }
+
+        @include mobile-small {
+            font-size: 10px;
+            line-height: 16px;
+        }
+    }
+
+    &__carousel {
+        // display: none;
+        max-width: 1170px;
+        margin: 40px auto 0px auto;
+        display: flex;
+        justify-content: space-between;
+
+        @include tablet {
+            margin: 35px auto 0px auto;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            gap: 50px;
+        }
+
+        @include mobile {
+            margin-top: 38px;
+            max-width: 300px;
+        }
+
+        .slick-slide {
+            display: flex;
+        }
+
+        .slick-dots {
+            list-style-type: none;
+            padding: 0px;
+            position: absolute;
+            top: 280px;
+            right: 50%;
+            transform: translateX(50%);
+            display: flex !important;
+            justify-content: space-between;
+            gap: 16px;
+
+            .slick-active {
+                button {
+                    background: $green;
+                }
+            }
+
+            button {
+                font-size: 0;
+                width: 20px;
+                height: 20px;
+                background: #d5d5d5;
+                border: none;
+                border-radius: 100%;
+            }
+        }
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 370px;
+
+        @include laptop-small {
+            width: 300px;
+        }
+
+        &-icon {
+            margin-top: 24px;
+        }
+
+        &-title {
+            margin-top: 24px;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            text-align: center;
+            color: #2a3342;
+
+            @include tablet {
+                font-size: 20px;
+                margin-top: 28px;
+            }
+        }
+
+        &-descr {
+            margin-top: 14px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: #556987;
+        }
+    }
+
+    /* &__carousel {
+        display: none;
+
+        @include tablet {
+            display: block;
+        }
+
+        &-body {
+            margin: 35px auto 0px auto;
+            width: 100%;
+
+            .slick-slide {
+                display: flex;
+            }
+        }
+        &-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px;
+
+            &-icon {
+                margin-top: 28px;
+            }
+
+            &-title {
+                margin-top: 28px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 32px;
+                text-align: center;
+                color: #2a3342;
+            }
+
+            &-descr {
+                margin-top: 14px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                color: #556987;
+            }
+        }
+    } */
+}
+
+// .advantages__carousel .slick-dots {
+//     display: flex;
+//     column-gap: 16px;
+//     position: absolute;
+//     list-style: none;
+//     top: 270px;
+
+//     li {
+//         width: 12px;
+//         height: 12px;
+//         border-radius: 100%;
+//         background: #d5d5d5;
+
+//         &.slick-active {
+//             background: #22c55e;
+//         }
+//         button {
+//             display: none;
+//         }
+//     }
+// }
